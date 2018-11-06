@@ -1,0 +1,342 @@
+header{
+    height:140px;
+    position: relative;
+    padding:20px 200px;
+    line-height: 100px;
+    text-align: center;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+.logo{
+    position: absolute;
+    left:20px;
+    top:30px;
+    width:160px;
+    height:80px;    
+}
+header img{
+    width:100%;
+    height:100%;
+}
+.logo-r{
+    position: absolute;
+    right:20px;
+    top:30px;
+    width:160px;
+    height:80px;   
+}
+.title{
+    height:40px;
+    line-height: 40px;
+    padding:0 20px;
+    position: relative;
+    font-size:14px;
+}
+.user{
+    position: absolute;
+    right:20px;
+    top:0;
+    line-height: 40px;
+}
+.menu{
+    height:100px;
+    padding:20px;
+    background-color: #eaf4ff;
+}
+.menu-item{
+    width:85px;
+    height:100px;
+    margin:0 20px;
+    float: left;
+    position: relative;
+    font-size:14px;
+    text-align: center;
+}
+img{
+    width:100%;
+    height:100%;
+}
+.menu-img{
+    width:70px;
+    border-radius: 70px;
+    height:70px;
+    padding:4px;
+    margin-bottom: 5px;
+}
+.menu-item.active .menu-img{
+    border:1px solid #5400d8;
+}
+.main{
+    position: relative;
+}
+/** check-in*/
+.left-menu{
+    width:270px;
+}
+.left-menu .search{
+    height:90px;
+    background-color: #5400d8;
+    padding:20px 30px;
+    text-align: center;
+    color:white;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+.add{
+    width:100%;
+    height:60px;
+}
+.left-mune-list li{
+    height:115px;
+    width: 100%;
+    background-image: url('./img/menu-left.jpg');
+    background-size: 100%;
+    padding: 16px 30px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    position: relative;
+}
+.left-mune-list .head-img{
+    width:82px;
+    height:82px;
+}
+.left-menu-i-r{
+    position: absolute;
+    top:16px;
+    left:130px;
+    line-height: 20px;
+    font-size: 13px;
+}
+.search-input{
+    margin-top: 5px;
+    height: 25px;
+    border-radius: 25px;
+    background-color: white;
+    position: relative;
+}
+.search-img{
+    position: absolute;
+    right: 5px;
+    top: 3px;
+    width:20px;
+    height:20px;
+}
+.search-input input{
+    width:77%;
+    height: 100%;
+    border: none;
+    outline: none;
+}
+.content{
+    position: absolute;
+    left:300px;
+    top:16px;
+    right:30px;
+}
+.content-c ul{
+    width:90%;
+}
+.content-c li{
+    width:50%;
+    padding-right:5%;
+    padding-left:100px;
+    float:left;
+    height:40px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    position: relative;
+}
+.content-c li.li1{
+    height:70px;
+}
+.content-c li input,.content-c li .input{
+    height:30px;
+    border:1px solid #d7d7d7;
+    outline: none;
+    width:100%;
+    line-height: 30px;
+} 
+.content-c li .input{
+    padding-right:40px;
+    box-sizing: border-box;
+    position: relative;
+    height:32px;
+}
+.content-c li .select-icon{
+    width:40px;
+    position: absolute;
+    top:0;
+    bottom:0;
+    right:0;
+    background-image: url('./img/select-icon.jpg');
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+}
+.content-c li select{
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+}
+.content-c li .input1{
+    height: 60px;
+}
+.content-c li label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:80px;
+    height: 40px;
+    line-height: 36px;
+}
+.content-c li .label1{
+    line-height: 20px;
+}
+.content-t {
+    width:100%;
+    position: relative;
+    height:190px;
+}
+.content-t .col4{
+    margin-right:20px;
+    text-align: center;
+    font-size: 14px;
+}
+.content-t .img-box{
+    border:1px solid #dedede;
+    height: 100px;
+    margin:5px 0 10px 0;
+    background-image: url('./img/photo.jpg');
+    background-size:40px 40px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+.loadbtn{
+    width: 80%;
+    margin: 0 auto;
+    height: 30px;
+}
+.capture{
+    background-color: #5400d8;
+    color:white;
+    width:50%;
+    margin-right:10%;
+    line-height: 30px;
+    border-radius: 3px;
+}
+.clearbtn{
+    background-color: #9bb0ce;
+    color:white;
+    width:40%;
+    line-height: 30px;
+    border-radius: 3px;
+}
+.content-t-r{
+    position: absolute;
+    top:10px;
+    right:0;
+    font-size: 14px;
+    line-height: 30px;
+}
+.content-t-r input{
+    height:30px;
+    border:1px solid #d7d7d7;
+}
+.content-t-r label{
+    margin-right: 5px;
+}
+.check-in-btn{
+    background-image: url('./img/checkin.jpg');
+    background-size:100%;
+    position: absolute;
+    right: 0;
+    top:45px;
+    width:40%;
+    height:36px;
+    background-repeat: no-repeat;
+}
+.mask-c{
+    width:450px;
+    height: 160px;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    margin-left: -225px;
+    margin-top:-80px;
+}
+.mask-title{
+    background-color: #5400d8;
+    color: white;
+    height:90px;
+    line-height: 90px;
+    text-align: center;
+    font-size: 26px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.mask-btn{
+    height: 70px;
+    background-color: white;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    line-height: 70px;
+    text-align: center;
+    font-size: 20px;
+    cursor:pointer;
+}
+.mask-btn li{
+    width:49.5%;
+    float: left;
+}
+.mask-btn li.bdr{
+    border-right:1px solid #6920dd;
+}
+/**check out*/
+.check-out-btn{
+    background-color: #e00000;
+    position: absolute;
+    right: 0;
+    top:45px;
+    width:40%;
+    height:36px;
+    color:white;
+    font-size: 18px;
+    line-height: 36px;
+    border-radius: 5px;
+}
+
+/**history*/
+.history{
+    padding:30px;
+}
+.history table{
+    width:100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+.history thead{
+    background-color: #D7E3ED;
+}
+.history table td,.history table th{
+    border:1px solid #5400d8;
+    padding:10px;
+}
+.history-t{
+    padding:20px 0;
+    height:30px;
+    line-height: 30px;
+}
+.history-t input{
+    height:30px;
+    line-height: 30px;
+    margin:0 30px 0 5px;
+    padding-left:5px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    border:1px solid #EBEBEC;
+}

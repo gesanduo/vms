@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0"
+	/>
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<link href="./index.css" rel="stylesheet" />
+	<link href="./main.css" rel="stylesheet" />
+	<script>
+		function setFontSize() {
+			window.baseFontSize = 20;
+			window.baseScreenWidth = 320;
+			var screenWidth = window.screen.width;
+			var html = document.querySelector('html');
+			if (window.parent !== window) {
+				screenWidth = html.offsetWidth;
+				html.className += 'mobile-model';
+			}
+			var fs = parseInt(screenWidth) / window.baseScreenWidth * window.baseFontSize;
+			window.htmlFontSize = (fs > 50 ? 50 : fs);
+			html.style.fontSize = window.htmlFontSize + 'px'
+		}
+		setFontSize();
+		window.onresize = setFontSize;
+	</script>
+</head>
+
+<body>
+	<header>
+		<div class="logo"><img src="./img/logo.jpg"/></div>
+		<h2>LiNKTIME VISITOR MANGEMENT SYSTEM</h2>
+		<div class="logo-r"><img src="./img/logo-r.jpg"/></div>
+	</header>
+	<div class="title white bg-blue">
+		ARCHTRON COMMUNITY
+		<span class="user">Hello,Security</span>
+	</div>
+	<div class="menu">
+		<ul>
+			<li class="menu-item active" type='check-in'>
+				<div class="menu-img">
+					<img src="./img/menu1.png">
+				</div>
+				<div class='menu-t'>check in</div>
+			</li>
+			<li class="menu-item " type='check-out'>
+				<div class="menu-img">
+					<img src="./img/menu2.png">
+				</div>
+				<div class='menu-t'>Check out</div>
+			</li>
+			<li class="menu-item " type='history'>
+				<div class="menu-img">
+					<img src="./img/menu3.png">
+				</div>
+				<div class='menu-t'>History</div>
+			</li>
+			<li class="menu-item " type='setting'>
+				<div class="menu-img">
+					<img src="./img/menu4.png">
+				</div>
+				<div class='menu-t'>Setting</div>
+			</li>
+			<li class="menu-item " type='logout'>
+					<div class="menu-img">
+						<img src="./img/menu5.png">
+					</div>
+					<div class='menu-t'>Log out</div>
+				</li>
+		</ul>
+	</div>
+	<div class="main check-in " type="check-in">
+		<div class="left-menu">
+			<div class="search">
+				<div>Visitation Id:</div>
+				<div class='search-input'>
+					<input type="text" id='check-in-search'>
+					<img src="./img/search.jpg" alt="" class='search-img'>
+				</div>
+			</div>
+			<div class="add">
+				<img src="./img/add.jpg" alt="">
+			</div>
+			<ul class="left-mune-list">
+				<li>
+					<img src="./img/test-h.jpg" alt="" class="head-img">
+					<div class="left-menu-i-r">
+						<p>10234871</p>
+						<p>Vuresh Prab</p>
+						<p>Unit E-21</p>
+						<p>3.00 p.m</p>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="content">
+			<div class="content-t">
+				<div class="col4">
+					<p>ID Photo</p>
+					<div class="img-box"></div>
+					<div class="loadbtn"><img src='./img/load.jpg'></div>
+				</div>
+				<div class="col4">
+					<p>Visitor Photo</p>
+					<div class="img-box"></div>
+					<div >
+						<div class="left capture">capture</div>
+						<div class="left clearbtn">clear</div>
+					</div>
+				</div>
+				<div class="col4">
+					<p>Visitor Photo</p>
+					<div class="img-box"></div>
+					<div >
+						<div class="left capture">capture</div>
+						<div class="left clearbtn">clear</div>
+					</div>
+				</div>
+				<div class="content-t-r">
+					<label for="">Pass ID</label>
+					<input type="text" class='passid'>
+					<div class="check-in-btn"></div>
+				</div>
+			</div>
+			<div class="content-c">
+				<ul>
+					<li>
+						<label>Visitor Name</label>
+						<input type="text" id="visitor-name">
+					</li>
+					<li>
+						<label>No.of Visitor</label>
+						<input type="select" id="visitor-no" class="odd">
+					</li>
+					<li>
+						<label>Contact No.</label>
+						<input type="text" id="contact-no">
+					</li>
+					<li>
+						<label>Host Name</label>
+						<input type="text" id="visitor-name" >
+					</li><li>
+						<label class="label1">MyKad/<br/>Identity No.</label>
+						<input type="text" id="mykad">
+					</li>
+					<li>
+						<label class="label1">Host Contact<br/>No.</label>
+						<input type="text" id="host-contact" >
+					</li>
+					<li>
+						<label>Gender</label>
+						<div class="input">
+							<select name="">
+								<option value="Male">Male</option>
+								<option value="Female">Female</option>
+							</select>
+							<div class='select-icon'></div>
+						</div>
+					</li>
+					<li>
+						<label>Unit No.</label>
+						<input type="text" id="visitor-name" >
+					</li>
+					<li class="li1">
+						<label>Address</label>
+						<input type="text" id="address" class="input1">
+					</li>
+					<li>
+						<label>Visitation ID</label>
+						<input type="select" id="Visitation-id" >
+					</li>
+					<div class='clear'></div>
+					<li>
+						<label>Vehicle No.</label>
+						<input type="text" id="Vehicle-no">
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="main check-in check-out hidden" type="check-out">
+		<div class="left-menu">
+			<div class="search">
+				<div>Visitation Id:</div>
+				<div class='search-input'>
+					<input type="text" id='check-in-search'>
+					<img src="./img/search.jpg" alt="" class='search-img'>
+				</div>
+			</div>
+			<div class="add">
+				<img src="./img/add.jpg" alt="">
+			</div>
+			<ul class="left-mune-list">
+				<li>
+					<img src="./img/test-h.jpg" alt="" class="head-img">
+					<div class="left-menu-i-r">
+						<p>10234871</p>
+						<p>Vuresh Prab</p>
+						<p>Unit E-21</p>
+						<p>3.00 p.m</p>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="content">
+			<div class="content-t">
+				<div class="col4">
+					<p>ID Photo</p>
+					<div class="img-box"></div>
+					<div class="loadbtn"><img src='./img/load.jpg'></div>
+				</div>
+				<div class="col4">
+					<p>Visitor Photo</p>
+					<div class="img-box"></div>
+					<div >
+						<div class="left capture">capture</div>
+						<div class="left clearbtn">clear</div>
+					</div>
+				</div>
+				<div class="col4">
+					<p>Visitor Photo</p>
+					<div class="img-box"></div>
+					<div >
+						<div class="left capture">capture</div>
+						<div class="left clearbtn">clear</div>
+					</div>
+				</div>
+				<div class="content-t-r">
+					<label for="">Pass ID</label>
+					<input type="text" class='passid'>
+					<div class="check-out-btn">check out</div>
+				</div>
+			</div>
+			<div class="content-c">
+				<ul>
+					<li>
+						<label>Visitor Name</label>
+						<input type="text" id="visitor-name">
+					</li>
+					<li>
+						<label>No.of Visitor</label>
+						<input type="select" id="visitor-no" class="odd">
+					</li>
+					<li>
+						<label>Contact No.</label>
+						<input type="text" id="contact-no">
+					</li>
+					<li>
+						<label>Host Name</label>
+						<input type="text" id="visitor-name" >
+					</li><li>
+						<label class="label1">MyKad/<br/>Identity No.</label>
+						<input type="text" id="mykad">
+					</li>
+					<li>
+						<label class="label1">Host Contact<br/>No.</label>
+						<input type="text" id="host-contact" >
+					</li>
+					<li>
+						<label>Gender</label>
+						<input type="text" id="visitor-name">
+					</li>
+					<li>
+						<label>Unit No.</label>
+						<input type="select" id="visitor-name" >
+					</li>
+					<li class="li1">
+						<label>Address</label>
+						<input type="text" id="address" class="input1">
+					</li>
+					<li>
+						<label>Visitation ID</label>
+						<input type="select" id="Visitation-id" >
+					</li>
+					<div class='clear'></div>
+					<li>
+						<label>Vehicle No.</label>
+						<input type="text" id="Vehicle-no">
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="main hidden" type="history">
+		<div class="history">
+			<div class="history-t">
+				 <div class="left">Name</div>
+				 <input type="text" class="left w20" id="history-name">
+				 <div class="left">Mykad/Identity No</div>
+				 <input type="text" class="left w15" id="history-Id">
+				 <div class="left">Start</div>
+				 <input type="text" class="left w10" id="history-start">
+				 <div class="left">End</div>
+				 <input type="text" class="left w10" id="history-end">
+				 <div class="btn">search</div>
+			</div>
+			<table>
+				<thead cellpadding='0' cellspacing='0'>
+					<tr>
+						<th class="w2">No</th>
+						<th class="w20 text-l">Name</th>
+						<th class="w15">Mykad/Identity No</th>
+						<th class="w9">Contact No</th>
+						<th class="w9">Vahicle No</th>
+						<th class="w9">Unit No</th>
+						<th class="w9">Vistation ID</th>
+						<th class="w9">Pass No</th>
+						<th class="w9">Check-in</th>
+						<th class="w9">Check-out</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>1</td>
+						<td class="text-l">aaaa</td>
+						<td>aaaa</td>
+						<td>aaaaa</td>
+						<td>aaaaa</td>
+						<td>aaaaaa</td>
+						<td>aaaaaa</td>
+						<td>aaaaaa</td>
+						<td>aaaaaa</td>
+						<td>aaaaaa</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+	<div class="mask hidden">
+		<div class="mask-c">
+			<div class="mask-title">Load MyKAD?</div>
+			<ul class="mask-btn">
+				<li class="mask-btn-yse bdr ">Yes</li>
+				<li class="mask-btn-No ">No</li>
+			</li>
+		</div>
+	</div>
+</body>
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/underscore.js/1.9.1/underscore-min.js"></script>
+<script src="./common.js"></script>
+<script src="./main.js"></script>
+</html>
