@@ -72,7 +72,7 @@
 				</li>
 		</ul>
 	</div>
-	<div class="main check-in " type="check-in">
+	<div class="main check-in hidden" type="check-in">
 		<div class="left-menu">
 			<div class="search">
 				<div>Visitation Id:</div>
@@ -288,7 +288,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="main hidden" type="history">
+	<div class="main history hidden" type="history">
 		<div class="history">
 			<div class="history-t">
 				 <div class="left">Name</div>
@@ -299,7 +299,7 @@
 				 <input type="text" class="left w10" id="history-start">
 				 <div class="left">End</div>
 				 <input type="text" class="left w10" id="history-end">
-				 <div class="btn">search</div>
+				 <div class="btn left"><img src="./img/search-btn.jpg" alt=""></div>
 			</div>
 			<table>
 				<thead cellpadding='0' cellspacing='0'>
@@ -331,11 +331,114 @@
 					</tr>
 				</tbody>
 			</table>
+			<div class="print"><img src="./img/print.jpg" alt=""></div>
 		</div>
 	</div>
-	<div class="mask hidden">
+	<div class="main setting " type="setting">
+		<div class="setting-m hidden">
+			<ul>
+				<li class="mr150"><img src="./img/general-btn.jpg" alt=""></li>
+				<li class="mr150"><img src="./img/camera.jpg" alt=""></li>
+				<li><img src="./img/user.jpg" alt=""></li>
+			</ul>
+		</div>
+		<div class="setting-c">
+				<div class="menu-c general hidden">
+						<div class="container">
+								<div class="title">CAMERA</div>
+								<ul>
+									<li>
+										<label>Community Name:</label>
+										<input type="text" id="community-name">
+									</li>
+									<li>
+										<label>Community Photo:</label>
+										<input type="text" id="community-photo">
+									</li>
+									<li>
+										<label>Vehicle Photo:</label>
+										<input type="text" id="Password">
+									</li>
+								</ul>
+						</div>
+						<div class="btns">
+								<div class="close-btn btn"><img src="./img/close.jpg" alt=""></div>
+								<div class="save-btn btn mr40"><img src="./img/save.jpg" alt=""></div>
+						</div>
+				</div>
+			<div class="menu-c camera hidden">
+					<div class="container">
+							<div class="title">CAMERA</div>
+							<ul>
+								<li>
+									<label>ID Photo:</label>
+									<input type="text" id="id-photo">
+								</li>
+								<li>
+									<label>Visitor Photo:</label>
+									<input type="text" id="Password">
+								</li>
+								<li>
+									<label>Vehicle Photo:</label>
+									<input type="text" id="Password">
+								</li>
+							</ul>
+					</div>
+					<div class="btns">
+							<div class="save-btn btn mr40"><img src="./img/save.jpg" alt=""></div>
+							<div class="close-btn btn"><img src="./img/close.jpg" alt=""></div>
+					</div>
+			</div>
+			<div class="menu-c user">
+					<div class="container">
+							<div class="title">CAMERA</div>
+							<ul>
+								<li>
+									<label>Community Name:</label>
+									<input type="text" id="community-name">
+								</li>
+								<li>
+									<label>Display Name:</label>
+									<input type="text" id="display-name">
+								</li>
+								<li>
+									<label>Group:</label>
+									<div class="input">
+										<select name="">
+											<option value="Male">Male</option>
+											<option value="Female">Female</option>
+										</select>
+									</div>
+								</li>
+								<li>
+										<label>Old Password:</label>
+										<input type="password" id="old-password">
+									</li>
+								<li>
+										<label>New Password:</label>
+										<input type="password" id="new-password">
+								</li>
+							</ul>
+					</div>
+					<div class="btns">
+							<div class="close-btn btn mr40"><img src="./img/close.jpg" alt=""></div>
+							<div class="save-btn btn "><img src="./img/save.jpg" alt=""></div>
+					</div>
+			</div>
+		</div>
+	</div>
+	<div class="mask hidden" >
 		<div class="mask-c">
 			<div class="mask-title">Load MyKAD?</div>
+			<ul class="mask-btn">
+				<li class="mask-btn-yse bdr ">Yes</li>
+				<li class="mask-btn-No ">No</li>
+			</li>
+		</div>
+	</div>
+	<div class="mask logout hidden" type="">
+		<div class="mask-c">
+			<div class="mask-title">LOG OUT?</div>
 			<ul class="mask-btn">
 				<li class="mask-btn-yse bdr ">Yes</li>
 				<li class="mask-btn-No ">No</li>
