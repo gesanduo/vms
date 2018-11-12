@@ -36,7 +36,7 @@
 	</header>
 	<div class="title white bg-blue">
 		ARCHTRON COMMUNITY
-		<span class="user">Hello,Security</span>
+		<span class="user-name">Hello,Security</span>
 	</div>
 	<div class="menu">
 		<ul>
@@ -72,7 +72,7 @@
 				</li>
 		</ul>
 	</div>
-	<div class="main check-in hidden" type="check-in">
+	<div class="main check-in " type="check-in">
 		<div class="left-menu">
 			<div class="search">
 				<div>Visitation Id:</div>
@@ -188,9 +188,6 @@
 					<input type="text" id='check-in-search'>
 					<img src="./img/search.jpg" alt="" class='search-img'>
 				</div>
-			</div>
-			<div class="add">
-				<img src="./img/add.jpg" alt="">
 			</div>
 			<ul class="left-mune-list">
 				<li>
@@ -334,104 +331,104 @@
 			<div class="print"><img src="./img/print.jpg" alt=""></div>
 		</div>
 	</div>
-	<div class="main setting " type="setting">
-		<div class="setting-m hidden">
+	<div class="main setting hidden" type="setting">
+		<div class="setting-m">
 			<ul>
-				<li class="mr150"><img src="./img/general-btn.jpg" alt=""></li>
-				<li class="mr150"><img src="./img/camera.jpg" alt=""></li>
-				<li><img src="./img/user.jpg" alt=""></li>
+				<li class="mr150" type="general"><img src="./img/general-btn.jpg" alt=""></li>
+				<li class="mr150" type="camera"><img src="./img/camera.jpg" alt=""></li>
+				<li type="user"><img src="./img/user.jpg" alt=""></li>
 			</ul>
 		</div>
 		<div class="setting-c">
-				<div class="menu-c general hidden">
-						<div class="container">
-								<div class="title">CAMERA</div>
-								<ul>
-									<li>
-										<label>Community Name:</label>
-										<input type="text" id="community-name">
-									</li>
-									<li>
-										<label>Community Photo:</label>
-										<input type="text" id="community-photo">
-									</li>
-									<li>
-										<label>Vehicle Photo:</label>
-										<input type="text" id="Password">
-									</li>
-								</ul>
-						</div>
-						<div class="btns">
-								<div class="close-btn btn"><img src="./img/close.jpg" alt=""></div>
-								<div class="save-btn btn mr40"><img src="./img/save.jpg" alt=""></div>
-						</div>
+			<div class="menu-c general hidden">
+				<div class="container">
+					<div class="title">CAMERA</div>
+					<ul>
+						<li>
+							<label>Community Name:</label>
+							<input type="text" id="community-name">
+						</li>
+						<li>
+							<label>Community Photo:</label>
+							<input type="text" id="community-photo">
+						</li>
+						<li>
+							<label>Vehicle Photo:</label>
+							<input type="text" id="Password">
+						</li>
+					</ul>
 				</div>
-			<div class="menu-c camera ">
-					<div class="container">
-							<div class="title">CAMERA</div>
-							<ul>
-								<li>
-									<label>ID Photo:</label>
-									<input type="text" id="id-photo">
-								</li>
-								<li>
-									<label>Visitor Photo:</label>
-									<a href="javascript:;" class="upload-input ">
-										<span></span>
-										<div class="browse">Browse</div>
-										<input type="file" id="visitor-photo">
-									</a>
-								</li>
-								<li>
-									<label>Vehicle Photo:</label>
-									<a href="javascript:;" class="upload-input ">
-										<span></span>
-										<div class="browse">Browse</div>
-										<input type="file" id="vehicle-photo">
-									</a>
-								</li>
-							</ul>
-					</div>
-					<div class="btns">
-							<div class="save-btn btn mr40"><img src="./img/save.jpg" alt=""></div>
-							<div class="close-btn btn"><img src="./img/close.jpg" alt=""></div>
-					</div>
+				<div class="btns">
+						<div class="close-btn btn mr40"><img src="./img/close.jpg" alt=""></div>
+						<div class="save-btn btn "><img src="./img/save.jpg" alt=""></div>
+				</div>
+			</div>
+			<div class="menu-c camera hidden">
+				<div class="container">
+						<div class="title">CAMERA</div>
+						<ul>
+							<li>
+								<label>ID Photo:</label>
+								<input type="text" id="id-photo">
+							</li>
+							<li>
+								<label>Visitor Photo:</label>
+								<a href="javascript:;" class="upload-input ">
+									<span></span>
+									<div class="browse">Browse</div>
+									<input type="file" id="visitor-photo">
+								</a>
+							</li>
+							<li>
+								<label>Vehicle Photo:</label>
+								<a href="javascript:;" class="upload-input ">
+									<span></span>
+									<div class="browse">Browse</div>
+									<input type="file" id="vehicle-photo">
+								</a>
+							</li>
+						</ul>
+				</div>
+				<div class="btns">
+						<div class="save-btn btn mr40"><img src="./img/save.jpg" alt=""></div>
+						<div class="close-btn btn"><img src="./img/close.jpg" alt=""></div>
+				</div>
 			</div>
 			<div class="menu-c user hidden">
-					<div class="container">
-							<div class="title">CAMERA</div>
-							<ul>
-								<li>
-									<label>Community Name:</label>
-									<input type="text" id="community-name">
+				<div class="container">
+						<div class="title">USER</div>
+						<ul>
+							<li>
+								<label>Community Name:</label>
+								<input type="text" id="community-name">
+							</li>
+							<li>
+								<label>Display Name:</label>
+								<input type="text" id="display-name">
+							</li>
+							<li>
+								<label>Group:</label>
+								<div class="input">
+									<select name="">
+										<option value="Male">Male</option>
+										<option value="Female">Female</option>
+									</select>
+								</div>
+							</li>
+							<li>
+									<label>Old Password:</label>
+									<input type="password" id="old-password">
 								</li>
-								<li>
-									<label>Display Name:</label>
-									<input type="text" id="display-name">
-								</li>
-								<li>
-									<label>Group:</label>
-									<div class="input">
-										<select name="">
-											<option value="Male">Male</option>
-											<option value="Female">Female</option>
-										</select>
-									</div>
-								</li>
-								<li>
-										<label>Old Password:</label>
-										<input type="password" id="old-password">
-									</li>
-								<li>
-										<label>New Password:</label>
-										<input type="password" id="new-password">
-								</li>
-							</ul>
-					</div>
-					<div class="btns">
-							<div class="close-btn btn mr40"><img src="./img/close.jpg" alt=""></div>
-							<div class="save-btn btn "><img src="./img/save.jpg" alt=""></div>
-					</div>
+							<li>
+									<label>New Password:</label>
+									<input type="password" id="new-password">
+							</li>
+						</ul>
+				</div>
+				<div class="btns">
+						<div class="close-btn btn mr40"><img src="./img/close.jpg" alt=""></div>
+						<div class="save-btn btn "><img src="./img/save.jpg" alt=""></div>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -449,7 +446,7 @@
 			<div class="mask-title">LOG OUT?</div>
 			<ul class="mask-btn">
 				<li class="mask-btn-yse bdr ">Yes</li>
-				<li class="mask-btn-No ">No</li>
+				<li class="mask-btn-no ">No</li>
 			</li>
 		</div>
 	</div>
