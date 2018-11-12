@@ -6,9 +6,16 @@ $(function(){
             $(".main").addClass('hidden')
             $(".main[type="+type+"]").removeClass('hidden');
         });
+
         // check-in search
         $('.check-in .search-img').on('click',function(){
             checkInSearch();
+        })
+
+
+        /**setting */
+        $(".setting input[type=file]").on('change',function(e){
+            $(this).siblings('span').text($(this).val())
         })
     }
     

@@ -416,13 +416,46 @@ img{
     text-align: right;
     vertical-align: middle;
 }
-.setting .container input,.setting .container .input{
+.setting .container input[type=text],.setting .container .input,.setting .container input[type=password]{
     width:900px;
     height:52px;
     border:1px solid #e6e6e7;
     border-radius: 4px;
     padding:0 10px;
     box-sizing: border-box;
+}
+.setting  .upload-input{
+    position: relative;
+    width:900px;
+    height:52px;
+    line-height: 52px;
+    box-sizing: border-box;
+    display: inline-block;
+    padding: 4px;
+    overflow: hidden;
+    text-decoration: none;
+    text-indent: 0;
+    border:1px solid #e6e6e7;
+    vertical-align: middle;
+}
+.setting .upload-input input{
+    position: absolute;
+    color: transparent;
+    right: 0;
+    top: 0;
+    opacity: 0;
+    bottom:0;
+    width: 100%;
+}
+.setting .upload-input .browse{
+    color:white;
+    background-color: #5400d8;
+    position: absolute;
+    right:0;
+    top:0;
+    bottom:0;
+    text-align: center;
+    width:140px;
 }
 .setting .container .input{
     display: inline-block;
