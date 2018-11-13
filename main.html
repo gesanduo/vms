@@ -293,9 +293,9 @@
 				 <div class="left">Mykad/Identity No</div>
 				 <input type="text" class="left w15" id="history-Id">
 				 <div class="left">Start</div>
-				 <input type="text" class="left w10" id="history-start">
+				 <input type="text" class="left w10" id="history-start" onclick="WdatePicker({dateFmt:'yyyy年MM月dd日 HH时mm分ss秒'})" />
 				 <div class="left">End</div>
-				 <input type="text" class="left w10" id="history-end">
+				 <input type="text" class="left w10" id="history-end" onclick="WdatePicker({dateFmt:'yyyy年MM月dd日 HH时mm分ss秒'})" />
 				 <div class="btn left"><img src="./img/search-btn.jpg" alt=""></div>
 			</div>
 			<table>
@@ -451,8 +451,9 @@
 		</div>
 	</div>
 </body>
-<script src="./jquery.min.js"></script>
-<script src="./underscore-min.js"></script>
+<script src="./vendor/jquery.min.js"></script>
+<script src="./vendor/underscore-min.js"></script>
+<script src="./datepicker/WdatePicker.js"></script>
 <script src="./common.js"></script>
 <script src="./main.js"></script>
 </html>
