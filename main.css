@@ -74,6 +74,8 @@ img{
 /** check-in*/
 .left-menu{
     width:270px;
+    height:460px;
+    overflow-y: auto;
 }
 .left-menu .search{
     height:90px;
