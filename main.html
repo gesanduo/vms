@@ -7,6 +7,7 @@
 	/>
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Document</title>
+	<link href="./vendor/vide7.1.0/css/video-js.min.css" rel="stylesheet" />
 	<link href="./index.css" rel="stylesheet" />
 	<link href="./main.css" rel="stylesheet" />
 	<script>
@@ -105,7 +106,15 @@
 				</div>
 				<div class="col4">
 					<p>Visitor Photo</p>
-					<div class="img-box"></div>
+					<div class="img-box">
+						<video id="Visitor-Photo-video" class="video-js vms-video" controls preload="auto" 
+						poster="./img/m.jpg" data-setup="{}">
+						<source src="http://vjs.zencdn.net/v/oceans.mp4" type="video/mp4">
+						<source src="http://vjs.zencdn.net/v/oceans.webm" type="video/webm">
+						<source src="http://vjs.zencdn.net/v/oceans.ogv" type="video/ogg">
+						<p class="vjs-no-js"> To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a> </p>
+					</video>
+					</div>
 					<div >
 						<div class="left capture">capture</div>
 						<div class="left clearbtn">clear</div>
@@ -113,7 +122,15 @@
 				</div>
 				<div class="col4">
 					<p>Visitor Photo</p>
-					<div class="img-box"></div>
+					<div class="img-box">
+						<video id="Visitor-Photo-video1" class="video-js vms-video" controls preload="auto" 
+							poster="./img/m.jpg" data-setup="{}">
+							<source src="http://vjs.zencdn.net/v/oceans.mp4" type="video/mp4">
+							<source src="http://vjs.zencdn.net/v/oceans.webm" type="video/webm">
+							<source src="http://vjs.zencdn.net/v/oceans.ogv" type="video/ogg">
+							<p class="vjs-no-js"> To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a> </p>
+						</video>
+					</div>
 					<div >
 						<div class="left capture">capture</div>
 						<div class="left clearbtn">clear</div>
@@ -453,6 +470,8 @@
 </body>
 <script src="./vendor/jquery.min.js"></script>
 <script src="./vendor/underscore-min.js"></script>
+<script src="./vendor/vide7.1.0/js/video.min.js"></script>
+<script src="./vendor/vide7.1.0/js/zh-CN.js"></script>
 <script src="./datepicker/WdatePicker.js"></script>
 <script src="./common.js"></script>
 <script src="./main.js"></script>

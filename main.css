@@ -363,11 +363,11 @@ img{
     cursor: pointer;
 }
 .history .print{
-    width:70px;
+    width: 70px;
     height: 107px;
     position: absolute;
-    right:60px;
-    bottom:5px;
+    right: 60px;
+    margin-top: 10px;
     cursor: pointer;
 }
 /**setting  */
@@ -503,4 +503,14 @@ img{
     -webkit-appearance: none;
        -moz-appearance: none;
             appearance: none;
+}
+.vms-video{
+    width:100%;
+    height:100px;
+}
+.video-js .vjs-big-play-button{
+    left:50%;
+    top:50%;
+    margin-left:-45px;
+    margin-top:-22px;
 }
