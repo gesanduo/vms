@@ -101,7 +101,17 @@
 			<div class="content-t">
 				<div class="col4">
 					<p>ID Photo</p>
-					<div class="img-box"></div>
+					<div class="img-box">
+						<div class="video-box hidden"> <!--显示就去掉hidden类-->
+								<video id="idPhoto-video" class="video-js vms-video" controls preload="auto" 
+								poster="./img/m.jpg" data-setup="{}">
+								<source src="http://vjs.zencdn.net/v/oceans.mp4" type="video/mp4">
+								<source src="http://vjs.zencdn.net/v/oceans.webm" type="video/webm">
+								<source src="http://vjs.zencdn.net/v/oceans.ogv" type="video/ogg">
+								<p class="vjs-no-js"> To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a> </p>
+							</video>
+						</div>
+					</div>
 					<div class="loadbtn"><img src='./img/load.jpg'></div>
 				</div>
 				<div class="col4">
@@ -353,7 +363,7 @@
 			<ul>
 				<li class="mr150" type="general"><img src="./img/general-btn.jpg" alt=""></li>
 				<li class="mr150" type="camera"><img src="./img/camera.jpg" alt=""></li>
-				<li type="user"><img src="./img/user.jpg" alt=""></li>
+				<li type="user" class="setting-user"><img src="./img/user.jpg" alt=""></li>
 			</ul>
 		</div>
 		<div class="setting-c">
