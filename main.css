@@ -91,11 +91,11 @@ img{
     height:60px;
 }
 .left-mune-list li{
-    height:115px;
+    min-height:115px;
     width: 100%;
     background-image: url('./img/menu-left.jpg');
-    background-size: 100%;
-    padding: 16px 30px;
+    background-size: 100% 100%;
+    padding: 16px 30px 16px 130px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     position: relative;
@@ -103,11 +103,11 @@ img{
 .left-mune-list .head-img{
     width:82px;
     height:82px;
+    position: absolute;
+    left:30px;
+    top:16px;
 }
 .left-menu-i-r{
-    position: absolute;
-    top:16px;
-    left:130px;
     line-height: 20px;
     font-size: 13px;
 }
