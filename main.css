@@ -442,7 +442,6 @@ img{
     line-height: 52px;
     box-sizing: border-box;
     display: inline-block;
-    padding: 4px;
     overflow: hidden;
     text-decoration: none;
     text-indent: 0;
@@ -450,13 +449,9 @@ img{
     vertical-align: middle;
 }
 .setting .upload-input input{
-    position: absolute;
-    color: transparent;
-    right: 0;
-    top: 0;
-    opacity: 0;
-    bottom:0;
-    width: 100%;
+    border:none !important;
+    padding-right:150px;
+    outline: none;
 }
 .setting .upload-input .browse{
     color:white;
