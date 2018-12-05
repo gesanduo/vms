@@ -238,6 +238,11 @@ img{
     width: 80%;
     margin: 0 auto;
     height: 30px;
+    background-color:#5400d8;
+    color:white;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 4px;
 }
 .capture{
     background-color: #5400d8;
@@ -271,14 +276,16 @@ img{
     margin-right: 5px;
 }
 .check-in-btn{
-    background-image: url('./img/checkin.jpg');
-    background-size:100%;
     position: absolute;
     right: 0;
     top:45px;
     width:40%;
-    height:36px;
-    background-repeat: no-repeat;
+    height:30px;
+    text-align: center;
+    line-height: 30px;
+    color:white;
+    background-color: #14B208;
+    border-radius: 4px;
 }
 .mask-c{
     width:450px;
