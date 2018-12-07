@@ -209,7 +209,7 @@ img{
 .content-t {
     width:100%;
     position: relative;
-    height:190px;
+    height:220px;
 }
 .content-t .col4{
     margin-right:20px;
@@ -218,7 +218,7 @@ img{
 }
 .content-t .img-box{
     border:1px solid #dedede;
-    height: 100px;
+    height: 130px;
     margin:5px 0 10px 0;
     background-image: url('./img/photo.jpg');
     background-size:40px 40px;
@@ -233,6 +233,13 @@ img{
     top:0;
     width:100%;
     height:100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+.content-t .img-box-img img{
+    width:130px;
+    height:130px;
 }
 .loadbtn{
     width: 80%;
