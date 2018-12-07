@@ -228,7 +228,7 @@ img{
 }
 .content-t .img-box-img{
     position: absolute;
-    z-index: 9999;
+    z-index: 99;
     left:0;
     top:0;
     width:100%;
