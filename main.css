@@ -244,6 +244,11 @@ img{
 .content-t .img-box-img img{
     width:130px;
     height:130px;
+    position: absolute;
+    left:50%;
+    top:50%;
+    margin-left:-65px;
+    margin-top:-65px;
 }
 .loadbtn{
     width: 80%;
