@@ -38,6 +38,7 @@ header{
     border:1px solid #5400d8;
 }
 .title{
+    font-family: 'vms_bold';
     height:65px;
     background-color: #5400d8;
     line-height: 65px;
@@ -54,6 +55,8 @@ header{
 }
 .container li label{
     font-size: 16px;
+    /* font-family: 'vms_bold'; */
+    font-weight: 600;
     color:black;
     padding-right:10px;
 }

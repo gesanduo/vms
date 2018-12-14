@@ -45,13 +45,13 @@
 				<div class="menu-img">
 					<img src="./img/menu1.png">
 				</div>
-				<div class='menu-t'>check in</div>
+				<div class='menu-t'>check In</div>
 			</li>
 			<li class="menu-item " type='check-out'>
 				<div class="menu-img">
 					<img src="./img/menu2.png">
 				</div>
-				<div class='menu-t'>Check out</div>
+				<div class='menu-t'>Check Out</div>
 			</li>
 			<li class="menu-item " type='history'>
 				<div class="menu-img">
@@ -69,14 +69,14 @@
 					<div class="menu-img">
 						<img src="./img/menu5.png">
 					</div>
-					<div class='menu-t'>Log out</div>
+					<div class='menu-t'>Log Out</div>
 				</li>
 		</ul>
 	</div>
 	<div class="main check-in " type="check-in">
 		<div class="left-menu">
 			<div class="search">
-				<div>Visitation Id:</div>
+				<div class='vms-bold'>Visitation Id:</div>
 				<div class='search-input'>
 					<input type="text" id='check-in-search'>
 					<img src="./img/search.jpg" alt="" class='search-img'>
@@ -102,16 +102,14 @@
 				<div class="col4">
 					<p>ID Photo</p>
 					<div class="img-box">
-						<div class="video-box hidden"> <!--显示就去掉hidden类-->
-								<video id="idPhoto-video" class="video-js vms-video" controls preload="auto" 
-								poster="./img/m.jpg" data-setup="{}">
-								<source src="http://vjs.zencdn.net/v/oceans.mp4" type="video/mp4">
-								<source src="http://vjs.zencdn.net/v/oceans.webm" type="video/webm">
-								<source src="http://vjs.zencdn.net/v/oceans.ogv" type="video/ogg">
-								<p class="vjs-no-js"> To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a> </p>
-							</video>
-						</div>
-						<div class="img-box-img">
+						<video id="idPhoto-video" class="video-js vms-video" controls preload="auto" 
+						poster="./img/m.jpg" data-setup="{}" width="150" height="130">
+						<source src="http://vjs.zencdn.net/v/oceans.mp4" type="video/mp4">
+						<source src="http://vjs.zencdn.net/v/oceans.webm" type="video/webm">
+						<source src="http://vjs.zencdn.net/v/oceans.ogv" type="video/ogg">
+						<p class="vjs-no-js"> To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a> </p>
+					</video>
+						<div class="img-box-img hidden">
 							<img src="./img/checkin.jpg" alt="" >
 						</div>
 					</div>
@@ -165,7 +163,20 @@
 					</li>
 					<li>
 						<label>No.of Visitor</label>
-						<input type="select" id="visitor-no" class="odd">
+						<div class="input">
+							<select name="">
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+								<option value="6">6</option>
+								<option value="7">7</option>
+								<option value="8">8</option>
+								<option value="9">9</option>
+								<option value="10">10</option>
+							</select>
+						</div>
 					</li>
 					<li>
 						<label>Contact No.</label>
@@ -215,7 +226,7 @@
 	<div class="main check-in check-out hidden" type="check-out">
 		<div class="left-menu">
 			<div class="search">
-				<div>Visitation Id:</div>
+				<div class='vms-bold'>Visitation Id:</div>
 				<div class='search-input'>
 					<input type="text" id='check-in-search'>
 					<img src="./img/search.jpg" alt="" class='search-img'>
@@ -270,7 +281,20 @@
 					</li>
 					<li>
 						<label>No.of Visitor</label>
-						<input type="select" id="visitor-no" class="odd">
+						<div class="input">
+							<select name="">
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+								<option value="6">6</option>
+								<option value="7">7</option>
+								<option value="8">8</option>
+								<option value="9">9</option>
+								<option value="10">10</option>
+							</select>
+						</div>
 					</li>
 					<li>
 						<label>Contact No.</label>
@@ -319,7 +343,7 @@
 	</div>
 	<div class="main history hidden" type="history">
 		<div class="history-c">
-			<div class="history-t">
+			<div class="history-t vms-bold">
 				 <div class="left">Name</div>
 				 <input type="text" class="left w20" id="history-name">
 				 <div class="left">Mykad/Identity No</div>
@@ -332,7 +356,7 @@
 			</div>
 			<table>
 				<thead cellpadding='0' cellspacing='0'>
-					<tr>
+					<tr class='vms-bold'>
 						<th class="w2">No</th>
 						<th class="w20 text-l">Name</th>
 						<th class="w15">Mykad/Identity No</th>
