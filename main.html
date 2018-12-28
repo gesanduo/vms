@@ -8,6 +8,8 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Document</title>
 	<link href="./vendor/video-js.css" rel="stylesheet" />
+	<link href="./vendor/weui.css" rel="stylesheet" />
+	<link href="./vendor/jqweui.css" rel="stylesheet" />
 	<link href="./index.css" rel="stylesheet" />
 	<link href="./main.css" rel="stylesheet" />
 	<script>
@@ -45,7 +47,7 @@
 				<div class="menu-img">
 					<img src="./img/menu1.png">
 				</div>
-				<div class='menu-t'>check In</div>
+				<div class='menu-t '>Check In</div>
 			</li>
 			<li class="menu-item " type='check-out'>
 				<div class="menu-img">
@@ -74,270 +76,272 @@
 		</ul>
 	</div>
 	<div class="main check-in " type="check-in">
-		<div class="left-menu">
-			<div class="search">
-				<div class='vms-bold'>Visitation Id:</div>
-				<div class='search-input'>
-					<input type="text" id='check-in-search'>
-					<img src="./img/search.jpg" alt="" class='search-img'>
-				</div>
-			</div>
-			<div class="add">
-				<img src="./img/add.jpg" alt="">
-			</div>
-			<ul class="left-mune-list">
-				<li>
-					<img src="./img/test-h.jpg" alt="" class="head-img">
-					<div class="left-menu-i-r">
-						<p>10234871</p>
-						<p>Vuresh Prab</p>
-						<p>Unit E-21</p>
-						<p>3.00 p.m</p>
+		<div class="menu-page">
+			<div class="left-menu">
+				<div class="search">
+					<div class='vms-bold'>Visitation Id:</div>
+					<div class='search-input'>
+						<input type="text" id='check-in-search'>
+						<img src="./img/search.jpg" alt="" class='search-img'>
 					</div>
-				</li>
-			</ul>
-		</div>
-		<div class="content">
-			<div class="content-t">
-				<div class="col4">
-					<p>ID Photo</p>
-					<div class="img-box">
-						<video id="idPhoto-video" class="video-js vms-video" controls preload="auto" 
-						poster="./img/m.jpg" data-setup="{}" width="150" height="130">
-						<source src="http://vjs.zencdn.net/v/oceans.mp4" type="video/mp4">
-						<source src="http://vjs.zencdn.net/v/oceans.webm" type="video/webm">
-						<source src="http://vjs.zencdn.net/v/oceans.ogv" type="video/ogg">
-						<p class="vjs-no-js"> To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a> </p>
-					</video>
-						<div class="img-box-img hidden">
-							<img src="./img/checkin.jpg" alt="" >
+				</div>
+				<div class="add"><span class='jia'>+</span>Add New Visitor</div>
+				<ul class="left-mune-list">
+					<li>
+						<img src="./img/test-h.jpg" alt="" class="head-img">
+						<div class="left-menu-i-r">
+							<p>10234871</p>
+							<p>Vuresh Prab</p>
+							<p>Unit E-21</p>
+							<p>3.00 p.m</p>
 						</div>
-					</div>
-					<div class="loadbtn">Load MyKad</div>
-				</div>
-				<div class="col4">
-					<p>Visitor Photo</p>
-					<div class="img-box">
-						<video id="Visitor-Photo-video" class="video-js vms-video" controls preload="auto" 
-							poster="./img/m.jpg" >
-							<source src="http://d2zihajmogu5jn.cloudfront.net/bipbop-advanced/bipbop_16x9_variant.m3u8" type="application/x-mpegURL">
-							<p class="vjs-no-js"> To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a> </p>
-						</video>
-						
-					</div>
-					<div >
-						<div class="left capture">capture</div>
-						<div class="left clearbtn">clear</div>
-					</div>
-				</div>
-				<div class="col4">
-					<p>Visitor Photo</p>
-					<div class="img-box">
-						<video id="Visitor-Photo-video1" class="video-js vms-video" controls preload="auto" 
-							poster="./img/m.jpg" data-setup="{}">
+					</li>
+				</ul>
+			</div>
+			<div class="content">
+				<div class="content-t">
+					<div class="col4">
+						<p>ID Photo</p>
+						<div class="img-box">
+							<video id="idPhoto-video" class="video-js vms-video" controls preload="auto" 
+							poster="./img/m.jpg" data-setup="{}" width="150" height="130">
 							<source src="http://vjs.zencdn.net/v/oceans.mp4" type="video/mp4">
 							<source src="http://vjs.zencdn.net/v/oceans.webm" type="video/webm">
 							<source src="http://vjs.zencdn.net/v/oceans.ogv" type="video/ogg">
 							<p class="vjs-no-js"> To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a> </p>
 						</video>
-						<div class="img-box-img">
-							<img src="./img/checkin.jpg" alt="" >
+							<div class="img-box-img hidden">
+								<img src="./img/checkin.jpg" alt="" >
+							</div>
+						</div>
+						<div class="loadbtn">Load MyKad</div>
+					</div>
+					<div class="col4">
+						<p>Visitor Photo</p>
+						<div class="img-box">
+							<video id="Visitor-Photo-video" class="video-js vms-video" controls preload="auto" 
+								poster="./img/m.jpg" >
+								<source src="http://d2zihajmogu5jn.cloudfront.net/bipbop-advanced/bipbop_16x9_variant.m3u8" type="application/x-mpegURL">
+								<p class="vjs-no-js"> To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a> </p>
+							</video>
+							
+						</div>
+						<div >
+							<div class="left capture">capture</div>
+							<div class="left clearbtn">clear</div>
 						</div>
 					</div>
-					<div >
-						<div class="left capture">capture</div>
-						<div class="left clearbtn">clear</div>
+					<div class="col4">
+						<p>Visitor Photo</p>
+						<div class="img-box">
+							<video id="Visitor-Photo-video1" class="video-js vms-video" controls preload="auto" 
+								poster="./img/m.jpg" data-setup="{}">
+								<source src="http://vjs.zencdn.net/v/oceans.mp4" type="video/mp4">
+								<source src="http://vjs.zencdn.net/v/oceans.webm" type="video/webm">
+								<source src="http://vjs.zencdn.net/v/oceans.ogv" type="video/ogg">
+								<p class="vjs-no-js"> To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a> </p>
+							</video>
+							<div class="img-box-img">
+								<img src="./img/checkin.jpg" alt="" >
+							</div>
+						</div>
+						<div >
+							<div class="left capture">capture</div>
+							<div class="left clearbtn">clear</div>
+						</div>
+					</div>
+					<div class="content-t-r">
+						<label for="">Pass ID</label>
+						<input type="text" class='passid'>
+						<div class="check-in-btn">Check In</div>
 					</div>
 				</div>
-				<div class="content-t-r">
-					<label for="">Pass ID</label>
-					<input type="text" class='passid'>
-					<div class="check-in-btn">Check In</div>
+				<div class="content-c">
+					<ul>
+						<li>
+							<label>Visitor Name</label>
+							<input type="text" id="visitor-name">
+						</li>
+						<li>
+							<label>No.of Visitor</label>
+							<div class="input">
+								<select name="">
+									<option value="1">1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+									<option value="5">5</option>
+									<option value="6">6</option>
+									<option value="7">7</option>
+									<option value="8">8</option>
+									<option value="9">9</option>
+									<option value="10">10</option>
+								</select>
+							</div>
+						</li>
+						<li>
+							<label>Contact No.</label>
+							<input type="text" id="contact-no">
+						</li>
+						<li>
+							<label>Host Name</label>
+							<input type="text" id="visitor-name" >
+						</li><li>
+							<label class="label1">MyKad/<br/>Identity No.</label>
+							<input type="text" id="mykad">
+						</li>
+						<li>
+							<label class="label1">Host Contact<br/>No.</label>
+							<input type="text" id="host-contact" >
+						</li>
+						<li>
+							<label>Gender</label>
+							<div class="input">
+								<select name="">
+									<option value="Male">Male</option>
+									<option value="Female">Female</option>
+								</select>
+							</div>
+						</li>
+						<li>
+							<label>Unit No.</label>
+							<input type="text" id="visitor-name" >
+						</li>
+						<li class="li1">
+							<label>Address</label>
+							<input type="text" id="address" class="input1">
+						</li>
+						<li>
+							<label>Visitation ID</label>
+							<input type="select" id="Visitation-id" >
+						</li>
+						<div class='clear'></div>
+						<li>
+							<label>Vehicle No.</label>
+							<input type="text" id="Vehicle-no">
+						</li>
+					</ul>
 				</div>
-			</div>
-			<div class="content-c">
-				<ul>
-					<li>
-						<label>Visitor Name</label>
-						<input type="text" id="visitor-name">
-					</li>
-					<li>
-						<label>No.of Visitor</label>
-						<div class="input">
-							<select name="">
-								<option value="1">1</option>
-								<option value="2">2</option>
-								<option value="3">3</option>
-								<option value="4">4</option>
-								<option value="5">5</option>
-								<option value="6">6</option>
-								<option value="7">7</option>
-								<option value="8">8</option>
-								<option value="9">9</option>
-								<option value="10">10</option>
-							</select>
-						</div>
-					</li>
-					<li>
-						<label>Contact No.</label>
-						<input type="text" id="contact-no">
-					</li>
-					<li>
-						<label>Host Name</label>
-						<input type="text" id="visitor-name" >
-					</li><li>
-						<label class="label1">MyKad/<br/>Identity No.</label>
-						<input type="text" id="mykad">
-					</li>
-					<li>
-						<label class="label1">Host Contact<br/>No.</label>
-						<input type="text" id="host-contact" >
-					</li>
-					<li>
-						<label>Gender</label>
-						<div class="input">
-							<select name="">
-								<option value="Male">Male</option>
-								<option value="Female">Female</option>
-							</select>
-						</div>
-					</li>
-					<li>
-						<label>Unit No.</label>
-						<input type="text" id="visitor-name" >
-					</li>
-					<li class="li1">
-						<label>Address</label>
-						<input type="text" id="address" class="input1">
-					</li>
-					<li>
-						<label>Visitation ID</label>
-						<input type="select" id="Visitation-id" >
-					</li>
-					<div class='clear'></div>
-					<li>
-						<label>Vehicle No.</label>
-						<input type="text" id="Vehicle-no">
-					</li>
-				</ul>
 			</div>
 		</div>
 	</div>
 	<div class="main check-in check-out hidden" type="check-out">
-		<div class="left-menu">
-			<div class="search">
-				<div class='vms-bold'>Visitation Id:</div>
-				<div class='search-input'>
-					<input type="text" id='check-in-search'>
-					<img src="./img/search.jpg" alt="" class='search-img'>
-				</div>
-			</div>
-			<ul class="left-mune-list">
-				<li>
-					<img src="./img/test-h.jpg" alt="" class="head-img">
-					<div class="left-menu-i-r">
-						<p>10234871</p>
-						<p>Vuresh Prab</p>
-						<p>Unit E-21</p>
-						<p>3.00 p.m</p>
-					</div>
-				</li>
-			</ul>
-		</div>
-		<div class="content">
-			<div class="content-t">
-				<div class="col4">
-					<p>ID Photo</p>
-					<div class="img-box"></div>
-					<div class="loadbtn">Load MyKad</div>
-				</div>
-				<div class="col4">
-					<p>Visitor Photo</p>
-					<div class="img-box"></div>
-					<div >
-						<div class="left capture">capture</div>
-						<div class="left clearbtn">clear</div>
+		<div class="menu-page">
+			<div class="left-menu">
+				<div class="search">
+					<div class='vms-bold'>Visitation Id:</div>
+					<div class='search-input'>
+						<input type="text" id='check-in-search'>
+						<img src="./img/search.jpg" alt="" class='search-img'>
 					</div>
 				</div>
-				<div class="col4">
-					<p>Visitor Photo</p>
-					<div class="img-box"></div>
-					<div >
-						<div class="left capture">capture</div>
-						<div class="left clearbtn">clear</div>
-					</div>
-				</div>
-				<div class="content-t-r">
-					<label for="">Pass ID</label>
-					<input type="text" class='passid'>
-					<div class="check-out-btn">check out</div>
-				</div>
-			</div>
-			<div class="content-c">
-				<ul>
+				<ul class="left-mune-list">
 					<li>
-						<label>Visitor Name</label>
-						<input type="text" id="visitor-name">
-					</li>
-					<li>
-						<label>No.of Visitor</label>
-						<div class="input">
-							<select name="">
-								<option value="1">1</option>
-								<option value="2">2</option>
-								<option value="3">3</option>
-								<option value="4">4</option>
-								<option value="5">5</option>
-								<option value="6">6</option>
-								<option value="7">7</option>
-								<option value="8">8</option>
-								<option value="9">9</option>
-								<option value="10">10</option>
-							</select>
+						<img src="./img/test-h.jpg" alt="" class="head-img">
+						<div class="left-menu-i-r">
+							<p>10234871</p>
+							<p>Vuresh Prab</p>
+							<p>Unit E-21</p>
+							<p>3.00 p.m</p>
 						</div>
-					</li>
-					<li>
-						<label>Contact No.</label>
-						<input type="text" id="contact-no">
-					</li>
-					<li>
-						<label>Host Name</label>
-						<input type="text" id="visitor-name" >
-					</li><li>
-						<label class="label1">MyKad/<br/>Identity No.</label>
-						<input type="text" id="mykad">
-					</li>
-					<li>
-						<label class="label1">Host Contact<br/>No.</label>
-						<input type="text" id="host-contact" >
-					</li>
-					<li>
-						<label>Gender</label>
-						<div class="input">
-							<select name="">
-								<option value="Male">Male</option>
-								<option value="Female">Female</option>
-							</select>
-						</div>
-					</li>
-					<li>
-						<label>Unit No.</label>
-						<input type="select" id="visitor-name" >
-					</li>
-					<li class="li1">
-						<label>Address</label>
-						<input type="text" id="address" class="input1">
-					</li>
-					<li>
-						<label>Visitation ID</label>
-						<input type="select" id="Visitation-id" >
-					</li>
-					<div class='clear'></div>
-					<li>
-						<label>Vehicle No.</label>
-						<input type="text" id="Vehicle-no">
 					</li>
 				</ul>
+			</div>
+			<div class="content">
+				<div class="content-t">
+					<div class="col4">
+						<p>ID Photo</p>
+						<div class="img-box"></div>
+						<div class="loadbtn">Load MyKad</div>
+					</div>
+					<div class="col4">
+						<p>Visitor Photo</p>
+						<div class="img-box"></div>
+						<div >
+							<div class="left capture">capture</div>
+							<div class="left clearbtn">clear</div>
+						</div>
+					</div>
+					<div class="col4">
+						<p>Visitor Photo</p>
+						<div class="img-box"></div>
+						<div >
+							<div class="left capture">capture</div>
+							<div class="left clearbtn">clear</div>
+						</div>
+					</div>
+					<div class="content-t-r">
+						<label for="">Pass ID</label>
+						<input type="text" class='passid'>
+						<div class="check-out-btn">check out</div>
+					</div>
+				</div>
+				<div class="content-c">
+					<ul>
+						<li>
+							<label>Visitor Name</label>
+							<input type="text" id="visitor-name">
+						</li>
+						<li>
+							<label>No.of Visitor</label>
+							<div class="input">
+								<select name="">
+									<option value="1">1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+									<option value="5">5</option>
+									<option value="6">6</option>
+									<option value="7">7</option>
+									<option value="8">8</option>
+									<option value="9">9</option>
+									<option value="10">10</option>
+								</select>
+							</div>
+						</li>
+						<li>
+							<label>Contact No.</label>
+							<input type="text" id="contact-no">
+						</li>
+						<li>
+							<label>Host Name</label>
+							<input type="text" id="visitor-name" >
+						</li><li>
+							<label class="label1">MyKad/<br/>Identity No.</label>
+							<input type="text" id="mykad">
+						</li>
+						<li>
+							<label class="label1">Host Contact<br/>No.</label>
+							<input type="text" id="host-contact" >
+						</li>
+						<li>
+							<label>Gender</label>
+							<div class="input">
+								<select name="">
+									<option value="Male">Male</option>
+									<option value="Female">Female</option>
+								</select>
+							</div>
+						</li>
+						<li>
+							<label>Unit No.</label>
+							<input type="select" id="visitor-name" >
+						</li>
+						<li class="li1">
+							<label>Address</label>
+							<input type="text" id="address" class="input1">
+						</li>
+						<li>
+							<label>Visitation ID</label>
+							<input type="select" id="Visitation-id" >
+						</li>
+						<div class='clear'></div>
+						<li>
+							<label>Vehicle No.</label>
+							<input type="text" id="Vehicle-no">
+						</li>
+					</ul>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -352,7 +356,9 @@
 				 <input type="text" class="left w10" id="history-start" onclick="WdatePicker({dateFmt:'yyyy-MM-dd HH:mm:ss'})" />
 				 <div class="left">End</div>
 				 <input type="text" class="left w10" id="history-end" onclick="WdatePicker({dateFmt:'yyyy-MM-dd HH:mm:ss'})" />
-				 <div class="btn left"><img src="./img/search-btn.jpg" alt=""></div>
+				 <div class="btn left">
+					 <img src="./img/search-btn.jpg" alt="">	 
+					</div>
 			</div>
 			<table>
 				<thead cellpadding='0' cellspacing='0'>
@@ -384,7 +390,7 @@
 					</tr>
 				</tbody>
 			</table>
-			<div class="print"><img src="./img/print.jpg" alt=""></div>
+			<div class="print"><img src="./img/print.jpg" alt=""><div class="print-btn">print</div></div>
 		</div>
 	</div>
 	<div class="main setting hidden" type="setting">
@@ -506,6 +512,7 @@
 	</div>
 </body>
 <script src="./vendor/jquery.min.js"></script>
+<script src="./vendor/jqweui.min.js"></script>
 <script src="./vendor/underscore-min.js"></script>
 <script src="./vendor/video.js"></script>
 <script src="./vendor/videojs-contrib-hls.js"></script>
