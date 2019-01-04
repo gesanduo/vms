@@ -43,6 +43,7 @@ html,body{
     justify-content: center;
     align-items: center;
     color:black;
+    z-index:9999;
 }
 .alert-title{
     height: 30px;
