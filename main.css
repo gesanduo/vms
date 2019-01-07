@@ -5,11 +5,25 @@ header{
     padding:20px 200px;
     line-height: 100px;
     text-align: center;
-    font-size:30px;
+    font-size:38px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
 }
-
+@media only screen and (max-width: 1200px){
+    header{
+        font-size: 36px;
+    }
+}
+@media only screen and (max-width: 1300px){
+    header{
+        font-size: 38px;
+    }
+}
+@media only screen and (min-width: 1301px){
+    header{
+        font-size: 42px;
+    }
+}
 .logo{
     position: absolute;
     left:20px;
@@ -106,6 +120,7 @@ img{
     background-color: #802EFF;
     font-size: 16px;
     position: relative;
+    cursor: pointer;
 }
 .add .jia{
     display: inline-block;
@@ -243,7 +258,7 @@ img{
     width:90px;
     height: 40px;
     line-height: 36px;
-    font-family: 'vms-bold';
+    font-family: 'vms_bold';
 }
 .content-c li .label1{
     line-height: 20px;
@@ -305,6 +320,7 @@ img{
     text-align: center;
     line-height: 30px;
     border-radius: 4px;
+    cursor: pointer;
 }
 .capture{
     background-color: #5400d8;
@@ -444,7 +460,22 @@ img{
 .history-t .btn{
     width:100px;
     height:30px;
+    background-color: #5400d8;
+    color:white;
+    line-height: 30px;
     cursor: pointer;
+    position: relative;
+    border-radius: 3px;
+    padding-left:20px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+.history-t .btn img{
+    width:20px;
+    height: 20px;
+    position: absolute;
+    right:5px;
+    top:5px;
 }
 .history .print{
     width: 70px;
