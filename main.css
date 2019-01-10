@@ -88,16 +88,22 @@ img{
     border:1px solid #5400d8;
 }
 .main{
-    position: relative;
+    position: absolute;
+    left:0;
+    bottom:0;
+    top:320px;
+    width:100%;
+    min-height: 506px;
 }
 /** check-in*/
 .left-menu{
-    width:270px;
+    width:300px;
     overflow-y: auto;
     position: absolute;
     top:0;
     bottom:0;
     left:0;
+    min-height: 506px;
 }
 .left-menu .search{
     height:90px;
@@ -138,7 +144,7 @@ img{
     width: 100%;
     background-image: url('./img/menu-left.jpg');
     background-size: 100% 100%;
-    padding: 16px 30px 16px 130px;
+    padding: 16px 20px 16px 130px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     position: relative;
@@ -177,9 +183,13 @@ img{
     outline: none;
 }
 .menu-page{
-    position: relative;
-    padding-left:270px;
-    overflow: auto;
+    padding-left:300px;
+    /* overflow: auto; */
+    position: absolute;
+    left:0;
+    bottom:0;
+    top:0;
+    right:0;
     min-height: 506px;
 }
 .content{
@@ -466,7 +476,7 @@ img{
     cursor: pointer;
     position: relative;
     border-radius: 3px;
-    padding-left:20px;
+    padding-left:24px;
     font-size: 14px;
     box-sizing: border-box;
 }
