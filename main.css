@@ -433,9 +433,9 @@ img{
 
 /**history*/
 .history{
-    padding:30px;
+    padding:0 30px 30px 30px;
     position: absolute;
-    top: 300px;
+    top: 330px;
     left: 0;
     bottom: 0;
     right: 0;
