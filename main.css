@@ -94,6 +94,7 @@ img{
     top:320px;
     width:100%;
     min-height: 506px;
+    box-sizing: border-box;
 }
 /** check-in*/
 .left-menu{
